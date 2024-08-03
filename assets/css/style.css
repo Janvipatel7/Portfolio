@@ -36,12 +36,14 @@
     min-width: 200px;
     position: absolute;
 }
-.character-image img{
+
+.character-image img {
     right: 0;
     top: -70%;
     z-index: 99999;
 }
-.name-content{
+
+.name-content {
 
     left: 15%;
     top: 80%;
@@ -71,11 +73,16 @@ a {
 
 }
 
-.navmenu a:hover, .navmenu li:hover a {
+.navmenu a:hover,
+.navmenu li:hover a {
     width: 100%;
     color: var(--contrast-color);
 }
-.navmenu a:hover, .navmenu .active, .navmenu .active:focus, .navmenu li:hover a {
+
+.navmenu a:hover,
+.navmenu .active,
+.navmenu .active:focus,
+.navmenu li:hover a {
     color: var(--contrast-color);
     background: var(--nav-hover-color);
 }
@@ -88,15 +95,17 @@ a {
     font-size: 15px;
     color: var(--nav-color);
     transition: 0.3s all linear;
-    background:color-mix(in srgb, var(--default-color), transparent 92%);
+    background: color-mix(in srgb, var(--default-color), transparent 92%);
 
 }
+
 .navmenu ul li:hover {
     width: 100%;
 }
 
 
-.navmenu a, .navmenu a:focus {
+.navmenu a,
+.navmenu a:focus {
     color: var(--nav-color);
     font-family: var(--nav-font);
     display: flex;
@@ -105,26 +114,120 @@ a {
     margin-bottom: 8px;
     font-size: 15px;
     border-radius: 50px;
-    background: 
-color-mix(in srgb, var(--default-color), transparent 92%);
+    background:
+        color-mix(in srgb, var(--default-color), transparent 92%);
     height: 59px;
     width: 100%;
     overflow: hidden;
     transition: 0.3s;
-   
+
 }
 
-.navmenu a i, .navmenu a:focus i {
+.navmenu a i,
+.navmenu a:focus i {
     font-size: 20px;
 }
+
 .navmenu a:hover span {
     display: block;
 }
-.navmenu a span, .navmenu a:focus span {
+
+.navmenu a span,
+.navmenu a:focus span {
     padding: 0 5px 0 7px;
 }
 
 .navmenu a span {
+    font-family: "Poppins", sans-serif;
+    padding-inline-end: 5px;
+    padding-inline-start: 8px;
+    color: #fff;
+    display: none;
+}
+.navmenu3 {
+    padding: 0;
+    z-index: 9997;
+    position: fixed;
+}
+
+.navmenu3 ul {
+    list-style: none;
+    padding-block-end: 20px;
+    margin: 0;
+    width: 160px;
+}
+
+.navmenu3 .active {
+    color: var(--contrast-color);
+    background-color: var(--nav-hover-color);
+
+}
+
+.navmenu3 a:hover,
+.navmenu3 li:hover a {
+    width: 100%;
+    color: var(--contrast-color);
+}
+
+.navmenu3 a:hover,
+.navmenu3 .active,
+.navmenu3 .active:focus,
+.navmenu3 li:hover a {
+    color: var(--contrast-color);
+    background: var(--nav-hover-color);
+}
+
+.navmenu3 ul li {
+    width: 60px;
+    height: 60px;
+    border-radius: 50px;
+    margin-block-end: 8px;
+    font-size: 15px;
+    color: var(--nav-color);
+    transition: 0.3s all linear;
+    background: color-mix(in srgb, var(--default-color), transparent 92%);
+
+}
+
+.navmenu3 ul li:hover {
+    width: 100%;
+}
+
+
+.navmenu3 a,
+.navmenu3 a:focus {
+    color: var(--nav-color);
+    font-family: var(--nav-font);
+    display: flex;
+    align-items: center;
+    padding: 10px 18px;
+    margin-bottom: 8px;
+    font-size: 15px;
+    border-radius: 50px;
+    background:
+        color-mix(in srgb, var(--default-color), transparent 92%);
+    height: 59px;
+    width: 100%;
+    overflow: hidden;
+    transition: 0.3s;
+
+}
+
+.navmenu3 a i,
+.navmenu3 a:focus i {
+    font-size: 20px;
+}
+
+.navmenu3 a:hover span {
+    display: block;
+}
+
+.navmenu3 a span,
+.navmenu3 a:focus span {
+    padding: 0 5px 0 7px;
+}
+
+.navmenu3 a span {
     font-family: "Poppins", sans-serif;
     padding-inline-end: 5px;
     padding-inline-start: 8px;
@@ -558,10 +661,12 @@ color-mix(in srgb, var(--default-color), transparent 92%);
 .services .service-item:hover {
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }
-.blog-1{
+
+.blog-1 {
     position: relative;
 }
-.blog-info{
+
+.blog-info {
     font-family: "Raleway", sans-serif;
     background-color: white;
     padding: .5rem;
@@ -571,8 +676,9 @@ color-mix(in srgb, var(--default-color), transparent 92%);
     bottom: 0;
     transition: .3s all linear;
 }
-.blog-1:hover .blog-info{
-    visibility: visible ;
+
+.blog-1:hover .blog-info {
+    visibility: visible;
     bottom: 30px;
 
 }
@@ -582,9 +688,11 @@ color-mix(in srgb, var(--default-color), transparent 92%);
 .testimonials {
     padding-block: 60px;
 }
-.swiper{
+
+.swiper {
     width: 70%;
 }
+
 .swiper-slide {
     flex-shrink: 0;
     width: 100%;
@@ -760,7 +868,7 @@ color-mix(in srgb, var(--default-color), transparent 92%);
     border-radius: 50px;
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
-   
+
 }
 
 .footer {
@@ -850,4 +958,49 @@ color-mix(in srgb, var(--default-color), transparent 92%);
     font-size: 24px;
     color: var(--contrast-color);
     line-height: 0
+}
+
+.loader {
+    height: 100%;
+    width: 100%;
+    position: fixed;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #FFF;
+    z-index: 999999999;
+}
+
+.header .header-toggle {
+    color: var(--contrast-color);
+    background-color: var(--accent-color);
+    font-size: 22px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    cursor: pointer;
+    position: fixed;
+    top: 15px;
+    right: 15px;
+    z-index: 9999;
+    transition: background-color 0.3s;
+}
+
+.left-100 {
+    left: -100% !important;
+}
+.navmenu-2{
+    background-color: #fff;
+    height: 100vh;
+    width: 350px;
+    position: fixed;
+    left: 0;
+    z-index: 9999;
+
+}
+.block{
+    display: block !important;
 }

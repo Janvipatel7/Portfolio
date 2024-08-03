@@ -1,44 +1,54 @@
 @media (max-width:1200px) {
-    .name-content{
+    .name-content {
         left: 5%;
     }
-    .character-image{
+
+    .character-image {
         display: none;
     }
-    
-    .navmenu{
+
+    .navmenu {
         display: none;
     }
-    .section-title h2::before{
+
+    .section-title h2::before {
         left: 44%;
     }
-    .section-title h2::after{
+
+    .section-title h2::after {
         left: 47%;
     }
+
 }
 
 
 @media (max-width:992px) {
-    .section-title h2::before{
+    .section-title h2::before {
         left: 41%;
     }
-    .section-title h2::after{
+
+    .section-title h2::after {
         left: 46%;
     }
 }
+
 @media (max-width:768px) {
-    .section-title h2::before{
+    .section-title h2::before {
         left: 38%;
     }
-    .section-title h2::after{
+
+    .section-title h2::after {
         left: 45%;
     }
 }
+
 @media (max-width:400px) {
-    .section-title h2::before{
+    .section-title h2::before {
         left: 31%;
     }
-    .section-title h2::after{
+
+    .section-title h2::after {
         left: 43%;
     }
 }
+

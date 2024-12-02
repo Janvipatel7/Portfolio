@@ -240,14 +240,18 @@ a {
 }
 
 .hero {
-    background-image: url('../image/photo-1721497684662-cf36f0ee232e.avif');
+    background-image: url('/assets/image/');
     background-repeat: no-repeat;
     padding-block: 80px;
     display: flex;
     align-items: center;
     justify-content: center;
     position: relative;
-    min-height: 100vh;
+    background-size: cover;
+    background-position: center;
+    /* min-height: 100vh; */
+    width: 100%;
+    height: 100vh;
 }
 
 
@@ -607,7 +611,7 @@ a {
 }
 
 .services .service-item:hover svg path {
-    fill: #0dcaf0 !important;
+    fill: #0dcaf0 ;
 }
 
 .services .service-item .icon i {
@@ -642,6 +646,21 @@ a {
     color: #fd7e14;
 }
 
+.services .service-item:hover #two path{
+    fill: #fd7e14 ;
+}
+
+.services .service-item:hover i{
+    color: white;
+}
+
+.services .service-item:hover #three path{
+    fill: #20c997 ;
+}
+
+.services .service-item:hover i{
+    color: white !important;
+}
 .services .service-item.item-teal i {
     color: #20c997;
 }
@@ -649,15 +668,34 @@ a {
 .services .service-item.item-red i {
     color: #df1529;
 }
+.services .service-item:hover #four path{
+    fill: #df1529 ;
+}
+
+.services .service-item:hover i{
+    color: white !important;
+}
 
 .services .service-item.item-indigo i {
     color: #6610f2;
 }
+.services .service-item:hover #five path{
+    fill: #6610f2 ;
+}
 
+.services .service-item:hover i{
+    color: white !important;
+}
 .services .service-item.item-pink i {
     color: #f3268c;
 }
+.services .service-item:hover #six path{
+    fill: #f3268c ;
+}
 
+.services .service-item:hover i{
+    color: white !important;
+}
 .services .service-item:hover {
     box-shadow: 0px 5px 35px 0px rgba(0, 0, 0, 0.1);
 }

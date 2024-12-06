@@ -350,11 +350,11 @@ a {
     margin-block-end: 8px;
 }
 
-.about .content p {
+/* .about .content p {
     font-size: 16px;
     font-family: 'Roboto', sans-serif;
     color: #272829;
-}
+} */
 
 .about .content ul {
     padding: 0;

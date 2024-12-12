@@ -240,7 +240,7 @@ a {
 }
 
 .hero {
-    background-image: url('/assets/image/');
+    background-image: url('/assets/image/my-backgroud-image2.jpeg');
     background-repeat: no-repeat;
     padding-block: 80px;
     display: flex;

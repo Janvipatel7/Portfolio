@@ -203,6 +203,46 @@ p {
     color: #605dba;
 }
 
+.mobile-menu-toggle {
+    display: none;
+    font-size: 26px;
+    color: #343f52;
+    cursor: pointer;
+}
+
+.mobile-nav {
+    display: none;
+    background-color: #f0f0f8;
+    padding: 15px 0;
+}
+
+.mobile-nav ul {
+    flex-direction: column;
+    padding-left: 20px;
+}
+
+@media (max-width: 991px) {
+    .desktop-nav {
+        display: none;
+    }
+
+    .mobile-menu-toggle {
+        display: block;
+    }
+
+    .mobile-nav {
+        display: none;
+    }
+
+    .mobile-nav.active {
+        display: block;
+    }
+
+    .header-btn {
+        display: none;
+    }
+}
+
 .hero-section {
     padding: 100px 0;
     background-color: #f0f0f8;
@@ -320,8 +360,6 @@ p {
     position: absolute;
 }
 
-
-
 .time {
     margin-bottom: 120px;
 }
@@ -349,7 +387,6 @@ p {
     margin-top: -5px;
     word-spacing: normal;
 }
-
 
 .icon-creativity {
     width: 37px;
@@ -380,7 +417,6 @@ p {
     margin-bottom: 140px;
 }
 
-
 .Solutions-h4 {
     margin-top: 18%;
     color: rgb(96 93 186);
@@ -389,7 +425,6 @@ p {
     margin-bottom: 20px;
     margin-left: -12px;
     font-size: 17px;
-
 }
 
 .Solutions-h1 {
@@ -409,6 +444,11 @@ p {
     font-weight: 500;
     line-height: 1.7;
     color: #697283
+}
+
+.Solutions-h1,
+.Solutions-text {
+    margin-left: -12px;
 }
 
 .Solutions-image {
@@ -550,9 +590,7 @@ p {
     padding: 90px 0px;
 }
 
-
 .premium-prices-section {
-
     padding: 0px 15px;
 }
 
@@ -772,7 +810,6 @@ p {
     transform: translateY(-3px);
 }
 
-
 .analyze {
     padding: 120px 15px;
 }
@@ -949,4 +986,177 @@ p {
 
 .footer-last {
     padding: 20px 0px;
+}
+
+/* Responsive*/
+@media (max-width: 992px) {
+    .hero-section .container {
+        flex-direction: column-reverse;
+        text-align: center;
+        gap: 2rem;
+    }
+
+    .hero-section .col-6 {
+        width: 100%;
+        padding: 0 20px;
+    }
+
+    .colud-atteched {
+        margin-bottom: -5rem;
+    }
+
+    .hero-section h1 {
+        font-size: 36px;
+        line-height: 1.3;
+    }
+
+    .hero-section p {
+        font-size: 18px;
+    }
+
+    .btn-1,
+    .btn-2 {
+        width: 100%;
+        margin: 10px 0;
+    }
+    .service {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+    }
+
+    .col-3 {
+        width: 45%;
+    }
+    .time {
+        flex-direction: column;
+        gap: 2rem;
+        align-items: center;
+        text-align: center;
+    }
+
+    .time-clock img {
+        width: 100%;
+        max-width: 500px;
+    }
+
+    .time .col-6 {
+        width: 100%;
+        padding: 0 1rem;
+    }
+
+    .time-clock-h1 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .time-clock-h4 {
+        font-size: 18px;
+        color: #605dba;
+        font-weight: 600;
+        margin-bottom: 10px;
+    }
+
+    .time-clock-text {
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 1.5rem;
+    }
+
+    .icon-creativity {
+        margin-bottom: 10px;
+    }
+
+    .Creativity,
+    .Creativity-text {
+        text-align: center;
+    }
+}
+
+@media (max-width: 576px) {
+    .hero-section h1 {
+        font-size: 28px;
+    }
+
+    .hero-section p {
+        font-size: 16px;
+    }
+
+    .clouds-img {
+        margin-top: -3rem;
+    }
+}
+
+
+
+@media (max-width: 768px) {
+    .col-3 {
+        width: 100%;
+    }
+    
+    .service-section-top h3 {
+        font-size: 28px;
+        line-height: 1.4;
+    }
+
+    .service-text {
+        font-size: 1rem;
+    }
+
+    .service-text-heading {
+        font-size: 18px;
+    }
+
+    .prices {
+        flex-direction: column;
+        gap: 2rem;
+        text-align: center;
+    }
+
+    .premium-prices-section {
+        margin-top: -80px;
+    }
+
+    .card {
+        margin: 20px auto;
+        width: 100%;
+        max-width: 350px;
+        flex-direction: column;
+    }
+
+    .lets-talk {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .LETS\ TALK-image {
+        margin-bottom: 30px;
+        text-align: center;
+    }
+
+    .lets-talk-section {
+        margin: 0;
+    }
+
+    .lets-talk-h4,
+    .lets-talk-h1,
+    .lets-talk-text,
+    .join-us-btn {
+        margin-left: 0 !important;
+    }
+    .Solutions {
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .Solutions-image {
+        padding: 0;
+        margin-top: 30px;
+    }
+
+    .customer-ratio {
+        flex-direction: column;
+        gap: 20px;
+        align-items: center;
+    }
 }

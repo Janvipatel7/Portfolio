@@ -11,106 +11,49 @@
   <!-- fade css link -->
   <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
   <!-- fancybox css link -->
-   <link rel="stylesheet" href="./assets/css/fancybox.css">
+  <link rel="stylesheet" href="./assets/css/fancybox.css">
 
 
 </head>
 
 <body>
 
-  <header id="header" class=" fixed-top header-transpernt">
-    <div class="container p-12 flex align-item-center justify-between">
+  <header id="header" class="fixed-top header-transpernt">
+    <div class="container p-12 d-flex align-items-center justify-content-between">
       <div class="logo">
         <h1 class="text-light">
-          <div>
-            <span>Squadfree</span>
-          </div>
-
-
+          <span>Squadfree</span>
         </h1>
       </div>
-      <nav class="navbar">
-        <ul class="navbar-m flex align-item-center justify-between">
-          <li>
-            <a class="nav-link active" href="">Home</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">About Us</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Services</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Protfolio</a>
-          </li>
-          <li>
-            <a class="nav-link" href="">Team</a>
-          </li>
-          <li class="dropdown">
-            <a href="">Drop Down
-              <i class="ri-arrow-down-s-line"></i>
-            </a>
 
-            <!-- <ul>
-                            <li><span>Drop Down1</span></li>
-                            <li class="dropdown"><span>Deep Drop Down</span> <i class="bi bi-chevron-right"></i></a>
-                              <ul>
-                                <li><span>Deep Drop Down 1</span></li>
-                                <li><span>Deep Drop Down 2</span></li>
-                                <li><span>Deep Drop Down 3</span></li>
-                                <li><span>Deep Drop Down 4</span></li>
-                                <li><span>Deep Drop Down 5</span></li>
-                               </ul>
-                            </li>
-                            <li><span>Drop Down2</span></li>
-                            <li><span>Drop Down3</span></li>
-                            <li><span>Drop Down4</span></li>
-                          </ul> -->
-          </li>
-          <li class="dropdown megamenu">
-            <a href="">Mega Menu
-              <i class="ri-arrow-down-s-line"></i>
-            </a>
-            <!-- <ul>
-                          <li>
-                            <strong>Column 1</strong>
-                            <span>Column 1 link 1</span>
-                            <span>Column 1 link 2</span>
-                            <span>Column 1 link 3</span>
-                          </li>
-                          <li>
-                            <strong>Column 2</strong>
-                            <span>Column 2 link 1</span>
-                            <span>Column 2 link 2</span>
-                            <span>Column 3 link 3</span>
-                          </li>
-                          <li>
-                            <strong>Column 3</strong>
-                            <span>Column 3 link 1</span>
-                            <span>Column 3 link 2</span>
-                            <span>Column 3 link 3</span>
-                          </li>
-                          <li>
-                            <strong>Column 4</strong>
-                            <span>Column 4 link 1</span>
-                            <span>Column 4 link 2</span>
-                            <span>Column 4 link 3</span>
-                          </li>
-                          <li>
-                            <strong>Column 5</strong>
-                            <span>Column 5 link 1</span>
-                            <span>Column 5 link 2</span>
-                            <span>Column 5 link 3</span>
-                          </li>
-                        </ul> -->
-          </li>
-          <li>
-            <a class="nav-link" href="">Contact</a>
-          </li>
+      <button class="mobile-nav-toggle d-md-none" id="navToggle">
+        <i class="ri-menu-line"></i>
+      </button>
+
+      <nav class="navbar d-none d-md-flex" id="mainNavbar">
+        <ul class="navbar-m flex align-item-center justify-between">
+          <li><a class="nav-link active" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#team">Team</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+
+      <nav class="mobile-nav d-md-none" id="mobileNav">
+        <ul class="navbar-m flex flex-column align-item-center">
+          <li><a class="nav-link active" href="#hero">Home</a></li>
+          <li><a class="nav-link" href="#about">About Us</a></li>
+          <li><a class="nav-link" href="#services">Services</a></li>
+          <li><a class="nav-link" href="#portfolio">Portfolio</a></li>
+          <li><a class="nav-link" href="#team">Team</a></li>
+          <li><a class="nav-link" href="#contact">Contact</a></li>
         </ul>
       </nav>
     </div>
   </header>
+
   <section id="hero">
     <div class="hero-container d-flex flex-column justify-content-center align-items-center text-center"
       data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
@@ -126,17 +69,17 @@
     <section id="about" class="about">
       <div class="container">
         <div class="row">
-          <div class="col-5" data-aos="fade-up" data-aos-anchor-placement="center-bottom" data-aos-duration="2000">
+          <div class="col-md-5 col-12 mb-4" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
+            data-aos-duration="2000">
             <div class="content">
               <h3>Voluptatem dignissimos provident quasi</h3>
-              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Duis aute irure dolor in reprehenderit</p>
+              <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit...</p>
               <a href="" class="about-btn align-item-center">About us
                 <i class="ri-arrow-right-s-line"></i>
               </a>
             </div>
           </div>
-          <div class="col-7">
+          <div class="col-md-7 col-12">
             <div class="icon-boxes" data-aos="fade-up" data-aos-anchor-placement="center-bottom"
               data-aos-duration="1000">
               <div class="about-right flex">
@@ -182,7 +125,7 @@
             in iste officiis commodi quidem hic quas.</p>
         </div>
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="200">
               <div class="icon">
                 <i class="ri-dribbble-line"></i>
@@ -195,7 +138,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="300">
               <div class="icon">
                 <i class="ri-file-text-line"></i>
@@ -208,7 +151,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="400">
               <div class="icon">
                 <i class="ri-speed-up-line"></i>
@@ -221,7 +164,7 @@
               </p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="icon-box aos-init aos-animate" data-aos="fade-up" data-aos-delay="500">
               <div class="icon">
                 <i class="ri-earth-fill"></i>
@@ -240,7 +183,7 @@
     <section id="counts" class="counts count-bg">
       <div class="container">
         <div class="row">
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="count-box">
               <div class="d-flex">
                 <i class="ri-user-smile-line"></i>
@@ -250,7 +193,7 @@
                 "consequuntur quae"</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="count-box">
               <div class="d-flex">
                 <i class="ri-contacts-book-3-line"></i>
@@ -260,7 +203,7 @@
                 "adipisci atque cum quia aut"</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="count-box">
               <div class="d-flex">
                 <i class="ri-customer-service-2-fill"></i>
@@ -270,7 +213,7 @@
                 "aut commodi quaerat"</p>
             </div>
           </div>
-          <div class="col-3">
+          <div class="col-lg-3 col-md-6 col-12 mb-4">
             <div class="count-box">
               <div class="d-flex">
                 <i class="ri-group-line"></i>
